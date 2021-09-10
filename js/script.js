@@ -93,7 +93,7 @@ function handleSearch(event){
     var requiredKufferter = document.querySelector("#kuffert-input").value;
     var lejePeriodeIdage = beregnAntalLejedage();
 
-    fetch("https://api.jsonbin.io/b/613b8df19548541c29af8f1b", {
+    fetch("https://api.jsonbin.io/b/613b97faaa02be1d4445da08", {
         headers: {
             "X-Master-Key": "$2b$10$9ngEA6a1/PkxH5ofHtgbRerJGv7AkJ.fXwkoCOz46tta17dRwlU4G",
             "X-Bin-Meta": false,
