@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: beige;
+}
+.wrapper{
+    width: 85%;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+.logo{
+    margin: auto 0;
+}
+.login{
+    display: flex;
+    align-items: center;
+}
+.login img{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
+}
+main{
+    background-image: url("../img/roadtrip.jpg");
+    background-size: cover;
+    padding: 10em 15em;
+}
+input, select{
+    width: 9em;
+    height: 2em;
+    margin-top: .5em;
+    text-align: right;
+    padding: 0 .5em;
+}
+select{
+    width: 10.3em;
+    height: 2.3em;
+}
+.find-bil{
+    background-color:antiquewhite;
+    max-width: 23em;
+    outline: 1px solid black;
+}
+.find-bil h3{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 1.5em 0;
+}
+.adskil-form{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5em;
+}
+.input-label-style{
+    display: flex;
+    flex-direction: column;
+}
+.btn-container{
+    text-align: center;
+    padding: .5em 0 1.5em 0;
+}
+.book-knap{
+    width: 8.2em;
+    height: 2.5em;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: .2em;
+}
+.resultat{
+    padding: 0 15em;
+}
+.bil-resultat{
+    display: flex;
+    margin: 1.5em 0;
+    justify-content: space-between;
+    box-shadow: 0 0 3px black;
+    padding: 2.5em 5em;
+    border-radius: 10px;
+}
+.bil-img img{
+    height: 6em;
+    margin-right: 2.5em;
+}
+.titel-resultat, .info-resultat,
+.pris-booking-resultat, .bil-img,
+.img-titel-container{
+    margin: auto 0;
+}
+.info-resultat p{
+    line-height: 1.5;
+}
+.img-titel-container{
+    display: flex;
+}
+button{
+    width: 100%;
+    height: 2.2em;
+    margin-top: .5em;
+    background-color: green;
+    color: #ffffff;
+}
