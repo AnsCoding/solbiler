@@ -47,7 +47,7 @@ select{
     height: 2.3em;
 }
 .find-bil{
-    background-color:antiquewhite;
+    background-color:rgba(250, 235, 215, 0.904);
     max-width: 23em;
     outline: 1px solid black;
 }
@@ -87,16 +87,11 @@ select{
     box-shadow: 0 0 3px black;
     padding: 2.5em 5em;
     border-radius: 10px;
+    background-color: rgba(250, 235, 215, 0.904);
 }
 .bil-img img{
     max-height: 130px;
     max-width: 200px;
-    margin-right: 2.5em;
-}
-.titel-resultat, .info-resultat,
-.pris-booking-resultat, .bil-img,
-.img-titel-container{
-    margin: auto 0;
 }
 .info-resultat p{
     line-height: 1.5;
@@ -105,9 +100,32 @@ select{
     display: flex;
 }
 button{
-    width: 100%;
+    width: 100px;
     height: 2.2em;
     margin-top: .5em;
     background-color: green;
     color: #ffffff;
+}
+.bil-resultat h3, .info-resultat,
+.pris-booking-resultat, .bil-img,
+.img-titel-container{
+    margin: auto 0;
+}
+.bil-img{
+    width: 35%;
+}
+.bil-resultat h3{
+    width: 20%;
+}
+dl{
+    width: 35%;
+}
+dd{
+    margin: .5em 0;
+}
+.pris-booking-resultat{
+    width: auto;
+}
+.pris-booking-resultat h3{
+    text-align: center;
 }
