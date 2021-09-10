@@ -89,7 +89,8 @@ select{
     border-radius: 10px;
 }
 .bil-img img{
-    height: 6em;
+    max-height: 130px;
+    max-width: 200px;
     margin-right: 2.5em;
 }
 .titel-resultat, .info-resultat,
