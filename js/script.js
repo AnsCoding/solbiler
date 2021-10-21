@@ -81,6 +81,13 @@ function visBil(bilObject, lejePeriodeIdage){
     bilNode.querySelector(".kufferter").innerText = bilObject.kufferter;
     bilNode.querySelector(".pris").innerText = formatPris(lejePris);
 
+    const url = new URL("ekstra.html", window.location.origin)
+    url.searchParams.append("bil", bilObject.navn);
+    url.searchParams.append("dage", lejePeriodeIdage);
+    url.searchParams.append("pris", lejePris);
+
+    bilNode.querySelector("a").href = url.toString();
+
     bilListe.appendChild(bilNode);
 }
 

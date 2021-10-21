@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lej en bil | Solbiler ApS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <a href="index.html"><h1>Solbiler ApS</h1></a>
+            </div>
+            <div class="login">
+                <img src="img/user.svg" alt="Login Ikon">
+                <a href="#">Log Ind</a>
+            </div>
+        </header>
+        <main>
+            <div class="leje-detaljer">
+                <h3>Du har valgt:</h3>
+                <dl>
+                    <dt>Biltype</dt>
+                    <dd class="leje-bil"></dd>
+                    <dt>Antal dage</dt>
+                    <dd class="leje-dage"></dd>
+                    <dt>Lejepris</dt>
+                    <dd class="leje-pris"></dd>
+                </dl>
+            </div>
+        </main>
+        <section class="checkbox">
+            <h1>Checkbox Beregning</h1>
+            <form>
+                <label>
+                    <input type="checkbox" name="ekstras" value="199">
+                    Ekstra chauffør 199,00 Kr.
+                </label>
+                <label>
+                    <input type="checkbox" name="ekstras" value="155">
+                    Barnesæde (5-12 år) 155,00 Kr.
+                </label>
+                <label>
+                    <input type="checkbox" name="ekstras" value="140">
+                    Barnesæde (1-4 år) 140,00 Kr.
+                </label>
+                <label>
+                    <input type="checkbox" name="ekstras" value="100">
+                    Lift-net (0-1 år) 100,00 Kr.
+                </label>
+                <label>
+                    <input type="checkbox" name="ekstras" value="250">
+                    GPS Navigation 250,00 Kr.
+                </label>
+                <label>
+                    <input type="checkbox" name="ekstras" value="188">
+                    Snekæder 188,00 Kr.
+                </label>
+                <label>
+                    <input type="checkbox" name="ekstras" value="120">
+                    Vejhjælp+ 120,00 Kr.
+                </label>
+            </form>
+
+            <p>
+                Pris i alt inkl. ekstraudstyr:
+                <span class="ialt">0</span> Kr.
+            </p>
+
+        </section>
+    </div>
+    <script>
+        const url = new URL(window.location.href);
+        document.querySelector(".leje-bil").innerHTML = url.searchParams.get("bil")
+        document.querySelector(".leje-dage").innerHTML = url.searchParams.get("dage")
+        document.querySelector(".leje-pris").innerHTML = url.searchParams.get("pris")
+
+        const form = document.querySelector("form");
+        const ialt = document.querySelector(".ialt");
+
+        form.addEventListener("change", function () {
+            let pris = 0;
+            for (const ekstra of form.ekstras){
+                if (ekstra.checked === true){
+                    pris += Number(ekstra.value);
+                }
+            }
+
+            ialt.innerText = pris;
+        })
+    </script>
+</body>
+</html>
