@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lej en bil | Solbiler ApS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <a href="index.html"><h1>Solbiler ApS</h1></a>
+            </div>
+            <div class="login">
+                <img src="img/user.svg" alt="Login Ikon">
+                <a href="#">Log Ind</a>
+            </div>
+        </header>
+        <main>
+            <div class="find-bil">
+                <h3>Find bilen som passer til dig</h3>
+                <form>
+                    <div class="adskil-form">
+                        <div class="input-label-style">
+                            <label for="dato-fra">Jeg henter den</label>
+                            <input type="date" name="dato-fra" id="dato-fra">
+                        </div>
+    
+                        <div class="input-label-style">
+                            <label for="dato-til">Jeg afleverer den</label>
+                            <input type="date" name="dato-til" id="dato-til">
+                        </div>
+                    </div>
+
+                    <div class="adskil-form">
+                        <div class="input-label-style">                        
+                            <label for="person-input">Antal personer</label>
+                            <input type="number" value="1" min="1" max="8" name="person-input" id="person-input">
+                        </div>
+    
+                        <div class="input-label-style">
+                            <label for="kuffert-input">Antal kufferter</label>
+                            <select name="kuffert-input" id="kuffert-input">
+                                <option value="0">0 - kun taske</option>
+                                <option value="1">1 kuffert</option>
+                                <option value="2">2 kufferter</option>
+                                <option value="3">3 kufferter</option>
+                                <option value="4">4 kufferter</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <input type="button" value="Søg" class="book-knap">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <template id="bil-template">
+            <article class="bil-resultat">
+                <div class="bil-img">
+                    <img src="" alt="">
+                </div>
+                <h3></h3>
+                <dl>
+                    <dt>Kategori:</dt>
+                    <dd class="kategori"></dd>
+                    <dt>Personer:</dt>
+                    <dd class="personer"></dd>
+                    <dt>Kufferter:</dt>
+                    <dd class="kufferter"></dd>
+                </dl>
+                <div class="pris-booking-resultat">
+                    <h3 class="pris"></h3>
+                    <button>Book nu</button>
+                </div>
+            </article>
+        </template>
+        <section class="resultat"></section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
