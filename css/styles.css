@@ -129,3 +129,12 @@ dd{
 .pris-booking-resultat h3{
     text-align: center;
 }
+.video-player{
+    max-width: 750px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video{
+    width: 100%;
+}

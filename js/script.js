@@ -126,3 +126,25 @@ function handleSearch(event){
 
 
 bookBtn.addEventListener("click", handleSearch);
+
+
+const videoPlayer = document.querySelector(".video-player");
+const video = videoPlayer.querySelector(".video");
+const playBtn = videoPlayer.querySelector(".play-button");
+
+//Jeg opretter en if/else statement der lytter på knappen
+playBtn.addEventListener("click", (e)=>{
+    //Hvis videoen er på pause når der blivet klikket
+    if(video.paused){
+        //Så afspil videoen
+        video.play()
+        //Skift ikonet
+        e.target.textContent = "| |"
+    //Hvis videoen ikke er på pause  
+    }else{
+        //Så pause videoen når knappen bliver trykket
+        video.pause()
+        //Skift ikonet
+        e.target.textContent = "▶"
+    }
+})
