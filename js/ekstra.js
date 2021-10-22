@@ -31,8 +31,13 @@ form.addEventListener("submit", function(event){
         if(ekstra.checked === true){
             const numericValue = Number(ekstra.value);
             ialt += addVat(numericValue);
+            ekstrasList.push(ekstra.parentNode.innerText);
         }
     }
     sessionStorage.setItem("ialt", ialt);
-    event.preventDefault();
+    sessionStorage.setItem("ekstrasList", ekstrasList.join(", "));
+
+    sessionStorage.setItem("bil", url.searchParams.get("bil"));
+    sessionStorage.setItem("dage", url.searchParams.get("dage"));
+    sessionStorage.setItem("pris", url.searchParams.get("pris"));
 })
