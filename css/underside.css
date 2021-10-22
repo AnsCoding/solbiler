@@ -12,6 +12,7 @@ main{
     padding: 2em;
     box-shadow: 12px 12px rgb(161 82 65);
     height: 100%;
+    width: 30em;
 }
 .leje-detaljer h3{
     margin-bottom: .5em;
