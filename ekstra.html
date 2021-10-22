@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/underside.css">
     <title>Lej en bil | Solbiler ApS</title>
 </head>
 <body>
@@ -19,20 +20,21 @@
             </div>
         </header>
         <main>
-            <div class="leje-detaljer">
-                <h3>Du har valgt:</h3>
-                <dl>
-                    <dt>Biltype</dt>
-                    <dd class="leje-bil"></dd>
-                    <dt>Antal dage</dt>
-                    <dd class="leje-dage"></dd>
-                    <dt>Lejepris</dt>
-                    <dd class="leje-pris"></dd>
-                </dl>
-            </div>
-        </main>
-        <section class="checkbox">
-            <h1>Checkbox Beregning</h1>
+            <div class="sum-boks">
+                <div class="leje-detaljer">
+                    <h3>Du har valgt:</h3>
+                    <dl>
+                        <dt>Biltype</dt>
+                        <dd class="leje-bil"></dd>
+                        <dt>Antal dage</dt>
+                        <dd class="leje-dage"></dd>
+                        <dt>Lejepris</dt>
+                        <dd class="leje-pris"></dd>
+                    </dl>
+                </div>
+                <br>
+                <h3>Ekstraudstyr</h3>
+                <br>
             <form action="kunde.html">
                 <label>
                     <input type="checkbox" name="ekstras" value="199">
@@ -63,15 +65,18 @@
                     Vejhjælp+ 120,00 Kr.
                 </label>
            
+                <br>
                 <p>
-                    Pris i alt inkl. ekstraudstyr:
-                    <span class="ialt">0</span> Kr.
+                    Ekstraudstyr inkl. moms:
+                    <h3>
+                        <span class="ialt">0</span> Kr.
+                    </h3>
                 </p>
            
                 <button type="submit" class="button">Videre</button>
             </form>
-
-        </section>
+            </div>
+        </main>
     </div>
     <script src="js/ekstra.js"></script>
 </body>

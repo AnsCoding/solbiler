@@ -13,24 +13,16 @@
             <div class="logo">
                 <a href="index.html"><h1>Solbiler ApS</h1></a>
             </div>
+            <audio controls autoplay preload="auto">
+                <source src="img/chirpingbirds.mp3" type="audio/mpeg" />
+            </audio>
             <div class="login">
                 <img src="img/user.svg" alt="Login Ikon">
                 <a href="#">Log Ind</a>
             </div>
         </header>
         <main>
-            <audio controls autoplay preload="auto">
-                <source src="img/chirpingbirds.mp3" type="audio/mpeg" />
-            </audio>
-            <div class="video-player">
-                <video src="img/driving.mp4" poster="poster.png" class="video"></video>
-                <div class="player-controls">
-                    <button class="play-button" title="Play">▶</button>
-                </div>
-            </div>
-
             <div class="find-bil">
-                
                 <h3>Find bilen som passer til dig</h3>
                 <form>
                     <div class="adskil-form">
@@ -84,11 +76,18 @@
                 </dl>
                 <div class="pris-booking-resultat">
                     <h3 class="pris"></h3>
-                    <a href="ekstra.html">Book Nu</a>
+                    <a href="ekstra.html" class="book-btn">Book Nu</a>
                 </div>
             </article>
         </template>
-        <section class="resultat"></section>
+        <section class="resultat">
+        </section>
+        <div class="video-player">
+            <video src="img/driving.mp4" poster="poster.png" class="video"></video>
+            <div class="player-controls">
+                <button class="play-button" title="Play">▶</button>
+            </div>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/underside.css">
     <title>Lej en bil | Solbiler ApS</title>
 </head>
 <body>
@@ -19,23 +20,61 @@
             </div>
         </header>
         <main>
-            <div class="leje-detaljer">
-                <h3>Du har valgt:</h3>
-                <dl>
-                    <dt>Biltype</dt>
-                    <dd class="leje-bil"></dd>
-                    <dt>Antal dage</dt>
-                    <dd class="leje-dage"></dd>
-                    <dt>Lejepris</dt>
-                    <dd class="leje-pris"></dd>
-                </dl>
+            <div class="sum-boks">
+                <div class="leje-detaljer">
+                    <h3>Din booking:</h3>
+                    <dl>
+                        <dt>Biltype</dt>
+                        <dd class="leje-bil"></dd>
+                        <dt>Antal dage</dt>
+                        <dd class="leje-dage"></dd>
+                        <dt>Billeje i alt:</dt>
+                        <dd class="leje-pris"></dd>
+                        <dt>Ekstraudstyr</dt>
+                        <dd class="ekstra-udstyr"></dd>
+                        <dt>Ekstraudstyr pris</dt>
+                        <dd><span class="ekstra-pris">0</span> Kr.</dd>
+                        <dt>Pris i alt:</dt>
+                        <dd><h3><span class="ialt">0</span> Kr.</h3></dd>
+                    </dl>
+                </div>
+                <br>
+                <h3>Dine oplysninger</h3>
+                <br>
+            <form action="kvittering.html">
+                <label>
+                    Fornavn <br>
+                    <input type="input" name="ekstras" required>
+                </label>
+                <label>
+                    Efternavn <br>
+                    <input type="input" name="ekstras" required>
+                </label>
+                <label>
+                    Vejnavn <br>
+                    <input type="input" name="ekstras" required>
+                </label>
+                <label>
+                    Husnummer/etage <br>
+                    <input type="input" name="ekstras" required>
+                </label>
+                <label>
+                    Postnummer <br>
+                    <input type="input" name="ekstras" required>
+                </label>
+                <label>
+                    By <br>
+                    <input type="input" name="ekstras" required>
+                </label>
+                <label class="input">
+                    <input type="checkbox" name="ekstras" class="input" required>
+                   <p>Jeg er fyldt 18 år</p>
+                </label>
+
+                <button type="submit" class="button">Videre</button>
+            </form>
             </div>
         </main>
-        <section>
-            <h1>Kundeoplysninger</h1>
-
-
-        </section>
     </div>
     <script src="js/kunde.js"></script>
 </body>
