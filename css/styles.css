@@ -36,6 +36,7 @@ main{
     padding: 10em 15em;
     max-height: 20em;
     background-position: 25% 75%;
+    display: flex;
 }
 input, select{
     width: 9em;
@@ -52,7 +53,8 @@ select{
     background-color:rgba(250, 235, 215, 0.904);
     max-width: 23em;
     outline: 1px solid black;
-    padding: 2em;
+    padding: 2em 4em;
+    height: 100%;
 }
 .find-bil h3{
     text-align: center;
@@ -108,6 +110,7 @@ button{
     margin-top: .5em;
     background-color: rgb(161 82 65);
     color: #ffffff;
+    
 }
 .bil-resultat h3, .info-resultat,
 .pris-booking-resultat, .bil-img,
@@ -159,4 +162,7 @@ audio{
 }
 button{
     background-color: rgb(161 82 65);
+}
+.play-button{
+    margin: auto 50%;
 }
