@@ -1,4 +1,4 @@
-const url = new URL(window.location.href);
+const url = new URL('https://anscoding.github.io/solbiler/');
 document.querySelector(".leje-bil").innerHTML = url.searchParams.get("bil")
 document.querySelector(".leje-dage").innerHTML = url.searchParams.get("dage")
 document.querySelector(".leje-pris").innerHTML = url.searchParams.get("pris")
