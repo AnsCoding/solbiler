@@ -127,7 +127,6 @@ function handleSearch(event){
 
 bookBtn.addEventListener("click", handleSearch);
 
-
 const videoPlayer = document.querySelector(".video-player");
 const video = videoPlayer.querySelector(".video");
 const playBtn = videoPlayer.querySelector(".play-button");

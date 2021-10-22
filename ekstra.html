@@ -33,7 +33,7 @@
         </main>
         <section class="checkbox">
             <h1>Checkbox Beregning</h1>
-            <form>
+            <form action="kunde.html">
                 <label>
                     <input type="checkbox" name="ekstras" value="199">
                     Ekstra chauffør 199,00 Kr.
@@ -62,34 +62,17 @@
                     <input type="checkbox" name="ekstras" value="120">
                     Vejhjælp+ 120,00 Kr.
                 </label>
+           
+                <p>
+                    Pris i alt inkl. ekstraudstyr:
+                    <span class="ialt">0</span> Kr.
+                </p>
+           
+                <button type="submit" class="button">Videre</button>
             </form>
-
-            <p>
-                Pris i alt inkl. ekstraudstyr:
-                <span class="ialt">0</span> Kr.
-            </p>
 
         </section>
     </div>
-    <script>
-        const url = new URL(window.location.href);
-        document.querySelector(".leje-bil").innerHTML = url.searchParams.get("bil")
-        document.querySelector(".leje-dage").innerHTML = url.searchParams.get("dage")
-        document.querySelector(".leje-pris").innerHTML = url.searchParams.get("pris")
-
-        const form = document.querySelector("form");
-        const ialt = document.querySelector(".ialt");
-
-        form.addEventListener("change", function () {
-            let pris = 0;
-            for (const ekstra of form.ekstras){
-                if (ekstra.checked === true){
-                    pris += Number(ekstra.value);
-                }
-            }
-
-            ialt.innerText = pris;
-        })
-    </script>
+    <script src="js/ekstra.js"></script>
 </body>
 </html>
