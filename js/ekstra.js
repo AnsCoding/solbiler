@@ -36,7 +36,6 @@ form.addEventListener("submit", function(event){
     }
     sessionStorage.setItem("ialt", ialt);
     sessionStorage.setItem("ekstrasList", ekstrasList.join(", "));
-
     sessionStorage.setItem("bil", url.searchParams.get("bil"));
     sessionStorage.setItem("dage", url.searchParams.get("dage"));
     sessionStorage.setItem("pris", url.searchParams.get("pris"));

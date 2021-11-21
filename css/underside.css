@@ -32,3 +32,8 @@ input{
 .input input{
     width: 2em;
 }
+.kunde-navn{
+}
+.kunde-farve{
+    color: rgb(161 82 65)
+}

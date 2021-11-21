@@ -21,6 +21,8 @@
         </header>
         <main>
             <div class="sum-boks">
+                <h1>Kvittering</h1>
+                <p>Glæd dig! Din ordre er blevet placeret! <br> <br>
                 <div class="leje-detaljer">
                     <h3>Din booking:</h3>
                     <dl>
@@ -40,42 +42,31 @@
                 </div>
                 <br>
                 <h3>Dine oplysninger</h3>
-                <br>
-            <form action="kvittering.html">
-                <label>
-                    Fornavn <br>
-                    <input type="input" class="fornavn" required>
-                </label>
-                <label>
-                    Efternavn <br>
-                    <input type="input" class="efternavn" required>
-                </label>
-                <label>
-                    Vejnavn <br>
-                    <input type="input" class="vejnavn" required>
-                </label>
-                <label>
-                    Husnummer/etage <br>
-                    <input type="input" class="husnummer" required>
-                </label>
-                <label>
-                    Postnummer <br>
-                    <input type="input" class="postnummer" required>
-                </label>
-                <label>
-                    By <br>
-                    <input type="input" class="by" required>
-                </label>
-                <label class="input">
-                    <input type="checkbox" class="input" required>
-                   <p>Jeg er fyldt 18 år</p>
-                </label>
-
-                <button type="submit" class="button">Videre</button>
-            </form>
+                <dl>
+                    <dt>Fornavn</dt>
+                    <dd class="fornavn"></dd>
+                    <dt>Efternavn</dt>
+                    <dd class="efternavn"></dd>
+                    <dt>Vejnavn</dt>
+                    <dd class="vejnavn"></dd>
+                    <dt>Husnummer</dt>
+                    <dd class="husnummer"></dd>
+                    <dt>Postnummer</dt>
+                    <dd class="postnummer"></dd>
+                    <dt>By</dt>
+                    <dd class="by"></dd>
+                </dl>
             </div>
         </main>
     </div>
     <script src="js/kunde.js"></script>
+    <script>
+        document.querySelector(".fornavn").innerHTML = sessionStorage.getItem("fornavn");
+        document.querySelector(".efternavn").innerHTML = sessionStorage.getItem("efternavn");
+        document.querySelector(".vejnavn").innerHTML = sessionStorage.getItem("vejnavn");
+        document.querySelector(".husnummer").innerHTML = sessionStorage.getItem("husnummer");
+        document.querySelector(".postnummer").innerHTML = sessionStorage.getItem("postnummer");
+        document.querySelector(".by").innerHTML = sessionStorage.getItem("by");
+    </script>
 </body>
 </html>
