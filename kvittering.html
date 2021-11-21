@@ -61,12 +61,12 @@
     </div>
     <script src="js/kunde.js"></script>
     <script>
-        document.querySelector(".fornavn").innerHTML = sessionStorage.getItem("fornavn");
-        document.querySelector(".efternavn").innerHTML = sessionStorage.getItem("efternavn");
-        document.querySelector(".vejnavn").innerHTML = sessionStorage.getItem("vejnavn");
-        document.querySelector(".husnummer").innerHTML = sessionStorage.getItem("husnummer");
-        document.querySelector(".postnummer").innerHTML = sessionStorage.getItem("postnummer");
-        document.querySelector(".by").innerHTML = sessionStorage.getItem("by");
+        document.querySelector(".fornavn").innerHTML = url.searchParams.get("fornavn")
+        document.querySelector(".efternavn").innerHTML = url.searchParams.get("efternavn")
+        document.querySelector(".vejnavn").innerHTML = url.searchParams.get("vejnavn")
+        document.querySelector(".husnummer").innerHTML = url.searchParams.get("husnummer")
+        document.querySelector(".postnummer").innerHTML = url.searchParams.get("postnummer")
+        document.querySelector(".by").innerHTML = url.searchParams.get("by")
     </script>
 </body>
 </html>
